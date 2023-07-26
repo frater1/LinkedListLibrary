@@ -1,0 +1,366 @@
+\doxysection{llist.\+c File Reference}
+\hypertarget{llist_8c}{}\label{llist_8c}\index{llist.c@{llist.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \"{}llist.\+h\"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{llist_8c_a5e716051b14c8440070fd6dc9465a0fe}{add\+\_\+lists}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}list1, \mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}list2)
+\item 
+\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{llist_8c_ade9d0994ecd42f7ef0025374bb014e01}{insert\+\_\+at\+\_\+\+Head}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}head, int new\+\_\+value)
+\item 
+\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{llist_8c_ac27957034e5deb44179f9c4ed1170602}{insert\+\_\+at\+\_\+\+Tail}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}head, int new\+\_\+value)
+\item 
+\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{llist_8c_a605150fc7a978968d9bb859798748ce5}{delete\+\_\+at\+\_\+head}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}head)
+\item 
+\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{llist_8c_ae24476d38578d6df08874bf8badc15d0}{delete\+\_\+at\+\_\+tail}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}head)
+\item 
+int \mbox{\hyperlink{llist_8c_afa3d29d5de07ec18f534fbdf982fab04}{list\+\_\+lenght}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}head)
+\item 
+int \mbox{\hyperlink{llist_8c_ad5b99f39863ef959e5f3be37f7fc4b7b}{list\+\_\+lenght\+\_\+recursive\+\_\+way}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structnode}{node}})
+\item 
+bool \mbox{\hyperlink{llist_8c_a282c7f25ec131dfa0ee4c6520ac7f78e}{is\+\_\+member}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structnode}{node}}, int find\+\_\+value)
+\item 
+int \mbox{\hyperlink{llist_8c_a0470f06945b1dbab68674ac9c69847ab}{count\+\_\+matched\+\_\+search}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structnode}{node}}, int find\+\_\+value)
+\item 
+void \mbox{\hyperlink{llist_8c_af8021912daf616938f9f80760e990e73}{replace\+\_\+mathes}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structnode}{node}}, int find\+\_\+value, int replace\+\_\+value)
+\item 
+\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{llist_8c_afba8d51ec19ffc417d1f6431a2beca03}{delete\+\_\+first\+\_\+match}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}head, int delete\+\_\+value, bool \texorpdfstring{$\ast$}{*}was\+\_\+deleted)
+\item 
+\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{llist_8c_a30befc0955b4b2313575ebad5fcf69c9}{efficient\+\_\+delete\+\_\+matches}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}head, int delete\+\_\+value, int \texorpdfstring{$\ast$}{*}num\+\_\+deleted)
+\item 
+\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{llist_8c_aa80b041e0f8cd8dddcce9b86a9fe2894}{append\+\_\+list}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}head1, \mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}head2)
+\item 
+\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{llist_8c_af3f5ca93755ba55d3654b86b81520e25}{reverse\+\_\+list}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}head)
+\item 
+void \mbox{\hyperlink{llist_8c_ad59c0648a7f4d4c8c615d8a8583d438f}{sort\+\_\+list}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}head)
+\item 
+void \mbox{\hyperlink{llist_8c_ad8741d2fac199ed30daca4ed88199b00}{delete\+\_\+duplicates}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}head)
+\item 
+\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{llist_8c_af93765288380df0fd43ac0cc5e72cb6a}{insert\+\_\+after}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}head, int new\+\_\+value, int after\+\_\+value)
+\item 
+\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{llist_8c_acb481e65c4c06fa2fa3a944fc137ae3b}{delete\+\_\+list}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structnode}{node}})
+\item 
+\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{llist_8c_a6a0f4f37bbbfc86a8d4e21596a540d89}{duplicate\+\_\+list}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structnode}{node}})
+\item 
+\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{llist_8c_a798e647d6cb3997057018dd7094781a6}{merge\+\_\+sorted\+\_\+lists}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}list1, \mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}list2)
+\item 
+void \mbox{\hyperlink{llist_8c_aeb7a5eb124302515db5c11a581d00478}{print\+\_\+list}} (\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}head)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Linked List Library
+
+\begin{DoxyAuthor}{Author}
+Jack Frater K. Buyole 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+July 17, 2023. 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{llist_8c_a5e716051b14c8440070fd6dc9465a0fe}\label{llist_8c_a5e716051b14c8440070fd6dc9465a0fe} 
+\index{llist.c@{llist.c}!add\_lists@{add\_lists}}
+\index{add\_lists@{add\_lists}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{add\_lists()}{add\_lists()}}
+{\footnotesize\ttfamily void add\+\_\+lists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{list1,  }\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{list2 }\end{DoxyParamCaption})}
+
+This Function, add the values of two lists together. 
+\begin{DoxyParams}{Parameters}
+{\em head} & the pointer to the head of the first list \\
+\hline
+{\em head} & the pointer to the head of the second list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing. 
+\end{DoxyReturn}
+\Hypertarget{llist_8c_aa80b041e0f8cd8dddcce9b86a9fe2894}\label{llist_8c_aa80b041e0f8cd8dddcce9b86a9fe2894} 
+\index{llist.c@{llist.c}!append\_list@{append\_list}}
+\index{append\_list@{append\_list}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{append\_list()}{append\_list()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} append\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{head1,  }\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{head2 }\end{DoxyParamCaption})}
+
+The function to append nodes. This means that list2(head2) nodes will be added to list1(head1) or all nodes of list2 will added to list1. 
+\begin{DoxyParams}{Parameters}
+{\em head1} & the pointer to the head of the first list \\
+\hline
+{\em head2} & the pointer to the head of second the list \\
+\hline
+\end{DoxyParams}
+\Hypertarget{llist_8c_a0470f06945b1dbab68674ac9c69847ab}\label{llist_8c_a0470f06945b1dbab68674ac9c69847ab} 
+\index{llist.c@{llist.c}!count\_matched\_search@{count\_matched\_search}}
+\index{count\_matched\_search@{count\_matched\_search}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{count\_matched\_search()}{count\_matched\_search()}}
+{\footnotesize\ttfamily int count\+\_\+matched\+\_\+search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{node,  }\item[{int}]{find\+\_\+value }\end{DoxyParamCaption})}
+
+This function will count how many times the value is in the list 
+\begin{DoxyParams}{Parameters}
+{\em node} & the pointer to the head of the list. \\
+\hline
+{\em find\+\_\+value} & the pointer to the value that need counted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+matched values. 
+\end{DoxyReturn}
+\Hypertarget{llist_8c_a605150fc7a978968d9bb859798748ce5}\label{llist_8c_a605150fc7a978968d9bb859798748ce5} 
+\index{llist.c@{llist.c}!delete\_at\_head@{delete\_at\_head}}
+\index{delete\_at\_head@{delete\_at\_head}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{delete\_at\_head()}{delete\_at\_head()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} delete\+\_\+at\+\_\+head (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{head }\end{DoxyParamCaption})}
+
+Function to delete a single node or value at the head 
+\begin{DoxyParams}{Parameters}
+{\em head} & the pointer to the head of the list \\
+\hline
+\end{DoxyParams}
+\Hypertarget{llist_8c_ae24476d38578d6df08874bf8badc15d0}\label{llist_8c_ae24476d38578d6df08874bf8badc15d0} 
+\index{llist.c@{llist.c}!delete\_at\_tail@{delete\_at\_tail}}
+\index{delete\_at\_tail@{delete\_at\_tail}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{delete\_at\_tail()}{delete\_at\_tail()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} delete\+\_\+at\+\_\+tail (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{head }\end{DoxyParamCaption})}
+
+Function to delete a single node or value at the tail 
+\begin{DoxyParams}{Parameters}
+{\em head} & the pointer to the head of the list \\
+\hline
+\end{DoxyParams}
+\Hypertarget{llist_8c_ad8741d2fac199ed30daca4ed88199b00}\label{llist_8c_ad8741d2fac199ed30daca4ed88199b00} 
+\index{llist.c@{llist.c}!delete\_duplicates@{delete\_duplicates}}
+\index{delete\_duplicates@{delete\_duplicates}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{delete\_duplicates()}{delete\_duplicates()}}
+{\footnotesize\ttfamily void delete\+\_\+duplicates (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{head }\end{DoxyParamCaption})}
+
+The function that delete duplicate values in the list. 
+\begin{DoxyParams}{Parameters}
+{\em head} & the pointer to the head of the list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing. 
+\end{DoxyReturn}
+\Hypertarget{llist_8c_afba8d51ec19ffc417d1f6431a2beca03}\label{llist_8c_afba8d51ec19ffc417d1f6431a2beca03} 
+\index{llist.c@{llist.c}!delete\_first\_match@{delete\_first\_match}}
+\index{delete\_first\_match@{delete\_first\_match}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{delete\_first\_match()}{delete\_first\_match()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} delete\+\_\+first\+\_\+match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{head,  }\item[{int}]{delete\+\_\+value,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{was\+\_\+deleted }\end{DoxyParamCaption})}
+
+The Function that delete the match value within the list 
+\begin{DoxyParams}{Parameters}
+{\em head} & the pointer to the head of the list \\
+\hline
+{\em delete\+\_\+value} & the pointer to the value that need to be deleted. \\
+\hline
+{\em was\+\_\+deleted} & the pointer to keep check if the value was deleted. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{llist_8c_acb481e65c4c06fa2fa3a944fc137ae3b}\label{llist_8c_acb481e65c4c06fa2fa3a944fc137ae3b} 
+\index{llist.c@{llist.c}!delete\_list@{delete\_list}}
+\index{delete\_list@{delete\_list}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{delete\_list()}{delete\_list()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} delete\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{node }\end{DoxyParamCaption})}
+
+Function to delete the whole list \begin{DoxyReturn}{Returns}
+nothing. 
+\end{DoxyReturn}
+\Hypertarget{llist_8c_a6a0f4f37bbbfc86a8d4e21596a540d89}\label{llist_8c_a6a0f4f37bbbfc86a8d4e21596a540d89} 
+\index{llist.c@{llist.c}!duplicate\_list@{duplicate\_list}}
+\index{duplicate\_list@{duplicate\_list}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{duplicate\_list()}{duplicate\_list()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} duplicate\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{node }\end{DoxyParamCaption})}
+
+This function is to duplicate the list to get another list which has same values. 
+\begin{DoxyParams}{Parameters}
+{\em node} & the pointer to the head of the list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new duplicated list.. 
+\end{DoxyReturn}
+\Hypertarget{llist_8c_a30befc0955b4b2313575ebad5fcf69c9}\label{llist_8c_a30befc0955b4b2313575ebad5fcf69c9} 
+\index{llist.c@{llist.c}!efficient\_delete\_matches@{efficient\_delete\_matches}}
+\index{efficient\_delete\_matches@{efficient\_delete\_matches}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{efficient\_delete\_matches()}{efficient\_delete\_matches()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} efficient\+\_\+delete\+\_\+matches (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{head,  }\item[{int}]{delete\+\_\+value,  }\item[{int \texorpdfstring{$\ast$}{*}}]{num\+\_\+deleted }\end{DoxyParamCaption})}
+
+This function delete given value in the list 
+\begin{DoxyParams}{Parameters}
+{\em head} & the pointer to the head of the list \\
+\hline
+{\em delete\+\_\+value} & the pointer of the value that is to be deleted from the list \\
+\hline
+{\em num\+\_\+deleted} & the pointer that give count of how many values matched and deleted. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{llist_8c_af93765288380df0fd43ac0cc5e72cb6a}\label{llist_8c_af93765288380df0fd43ac0cc5e72cb6a} 
+\index{llist.c@{llist.c}!insert\_after@{insert\_after}}
+\index{insert\_after@{insert\_after}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{insert\_after()}{insert\_after()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} insert\+\_\+after (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{head,  }\item[{int}]{new\+\_\+value,  }\item[{int}]{after\+\_\+value }\end{DoxyParamCaption})}
+
+The Function to insert a value on given location( in the middle of value that are given) 
+\begin{DoxyParams}{Parameters}
+{\em head} & the pointer to the head of the list \\
+\hline
+{\em new\+\_\+value} & pointer of the new value that will be inserted \\
+\hline
+{\em after\+\_\+value} & pointer of the location on whih the value should be inserted. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{llist_8c_ade9d0994ecd42f7ef0025374bb014e01}\label{llist_8c_ade9d0994ecd42f7ef0025374bb014e01} 
+\index{llist.c@{llist.c}!insert\_at\_Head@{insert\_at\_Head}}
+\index{insert\_at\_Head@{insert\_at\_Head}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{insert\_at\_Head()}{insert\_at\_Head()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} insert\+\_\+at\+\_\+\+Head (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{head,  }\item[{int}]{new\+\_\+value }\end{DoxyParamCaption})}
+
+This Function insert the value at the head.. 
+\begin{DoxyParams}{Parameters}
+{\em head} & the pointer to the head of the list \\
+\hline
+{\em new\+\_\+value} & new value to be inserted in the list at head \\
+\hline
+\end{DoxyParams}
+\Hypertarget{llist_8c_ac27957034e5deb44179f9c4ed1170602}\label{llist_8c_ac27957034e5deb44179f9c4ed1170602} 
+\index{llist.c@{llist.c}!insert\_at\_Tail@{insert\_at\_Tail}}
+\index{insert\_at\_Tail@{insert\_at\_Tail}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{insert\_at\_Tail()}{insert\_at\_Tail()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} insert\+\_\+at\+\_\+\+Tail (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{head,  }\item[{int}]{new\+\_\+value }\end{DoxyParamCaption})}
+
+This Function insert the value at the tail.. 
+\begin{DoxyParams}{Parameters}
+{\em head} & the pointer to the head of the list \\
+\hline
+{\em new\+\_\+value} & new value to be inserted in the list at tail \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Here\+: as long as current is not equal to null, continue to the next node.
+
+\texorpdfstring{$<$}{<} we are returnig the head b/c the head is not gonna change\Hypertarget{llist_8c_a282c7f25ec131dfa0ee4c6520ac7f78e}\label{llist_8c_a282c7f25ec131dfa0ee4c6520ac7f78e} 
+\index{llist.c@{llist.c}!is\_member@{is\_member}}
+\index{is\_member@{is\_member}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{is\_member()}{is\_member()}}
+{\footnotesize\ttfamily bool is\+\_\+member (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{node,  }\item[{int}]{find\+\_\+value }\end{DoxyParamCaption})}
+
+This function will help us to search if a given value is within the list. 
+\begin{DoxyParams}{Parameters}
+{\em node} & the pointer to the head of the list. \\
+\hline
+{\em find\+\_\+value} & the pointer of the value that need checked if exist within the list. This function check if the given value is within the list. \\
+\hline
+{\em node} & the pointer to the head of the list. \\
+\hline
+{\em node} & the pointer of the value that need to be checked if it is within the list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value if it is whithin the list. 
+\end{DoxyReturn}
+\Hypertarget{llist_8c_afa3d29d5de07ec18f534fbdf982fab04}\label{llist_8c_afa3d29d5de07ec18f534fbdf982fab04} 
+\index{llist.c@{llist.c}!list\_lenght@{list\_lenght}}
+\index{list\_lenght@{list\_lenght}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{list\_lenght()}{list\_lenght()}}
+{\footnotesize\ttfamily int list\+\_\+lenght (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{head }\end{DoxyParamCaption})}
+
+This Function give you the number of how many values are stored in the list in a simple way. 
+\begin{DoxyParams}{Parameters}
+{\em head} & the pointer to the head of the list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the lenght of the list. 
+\end{DoxyReturn}
+\Hypertarget{llist_8c_ad5b99f39863ef959e5f3be37f7fc4b7b}\label{llist_8c_ad5b99f39863ef959e5f3be37f7fc4b7b} 
+\index{llist.c@{llist.c}!list\_lenght\_recursive\_way@{list\_lenght\_recursive\_way}}
+\index{list\_lenght\_recursive\_way@{list\_lenght\_recursive\_way}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{list\_lenght\_recursive\_way()}{list\_lenght\_recursive\_way()}}
+{\footnotesize\ttfamily int list\+\_\+lenght\+\_\+recursive\+\_\+way (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{node }\end{DoxyParamCaption})}
+
+This Function give you the number of how many values are stored in the list in a recursive way. Recursive function are function that call themselves. 
+\begin{DoxyParams}{Parameters}
+{\em head} & the pointer to the head of the list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the lenght. 
+\end{DoxyReturn}
+\Hypertarget{llist_8c_a798e647d6cb3997057018dd7094781a6}\label{llist_8c_a798e647d6cb3997057018dd7094781a6} 
+\index{llist.c@{llist.c}!merge\_sorted\_lists@{merge\_sorted\_lists}}
+\index{merge\_sorted\_lists@{merge\_sorted\_lists}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{merge\_sorted\_lists()}{merge\_sorted\_lists()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} merge\+\_\+sorted\+\_\+lists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{list1,  }\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{list2 }\end{DoxyParamCaption})}
+
+Function that merges two sorted lists into a single list 
+\begin{DoxyParams}{Parameters}
+{\em list1} & pointer to head of the first list \\
+\hline
+{\em list2} & pointer to head of the second list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the pointer of the merged list. 
+\end{DoxyReturn}
+\Hypertarget{llist_8c_aeb7a5eb124302515db5c11a581d00478}\label{llist_8c_aeb7a5eb124302515db5c11a581d00478} 
+\index{llist.c@{llist.c}!print\_list@{print\_list}}
+\index{print\_list@{print\_list}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{print\_list()}{print\_list()}}
+{\footnotesize\ttfamily void print\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{head }\end{DoxyParamCaption})}
+
+Function that print the list \begin{DoxyReturn}{Returns}
+nothing. 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<}We are using -\/\texorpdfstring{$>$}{>} bc the pointer is pointing to the struct not to the pointer itself\Hypertarget{llist_8c_af8021912daf616938f9f80760e990e73}\label{llist_8c_af8021912daf616938f9f80760e990e73} 
+\index{llist.c@{llist.c}!replace\_mathes@{replace\_mathes}}
+\index{replace\_mathes@{replace\_mathes}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{replace\_mathes()}{replace\_mathes()}}
+{\footnotesize\ttfamily void replace\+\_\+mathes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{node,  }\item[{int}]{find\+\_\+value,  }\item[{int}]{replace\+\_\+value }\end{DoxyParamCaption})}
+
+This function will replace the matched values with the new value that we are replacing with in the list. 
+\begin{DoxyParams}{Parameters}
+{\em node} & the pointer to the head of the list. \\
+\hline
+{\em find\+\_\+value} & the pointer to the value that need to be replaced \\
+\hline
+{\em replace\+\_\+value} & the pointer to the new value that will replace the old one. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing. 
+\end{DoxyReturn}
+\Hypertarget{llist_8c_af3f5ca93755ba55d3654b86b81520e25}\label{llist_8c_af3f5ca93755ba55d3654b86b81520e25} 
+\index{llist.c@{llist.c}!reverse\_list@{reverse\_list}}
+\index{reverse\_list@{reverse\_list}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{reverse\_list()}{reverse\_list()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*} reverse\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{head }\end{DoxyParamCaption})}
+
+The Function that reverse the list. 
+\begin{DoxyParams}{Parameters}
+{\em head} & the pointer to the head of the list \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} setting the first node to null so it can become a tail
+
+\texorpdfstring{$<$}{<}reversing/flipping happening here!
+
+\texorpdfstring{$<$}{<}temp node point to whatever is after the nextnode
+
+\texorpdfstring{$<$}{<} nextnode point back to the last node
+
+\texorpdfstring{$<$}{<} the new last one poit to newnode\Hypertarget{llist_8c_ad59c0648a7f4d4c8c615d8a8583d438f}\label{llist_8c_ad59c0648a7f4d4c8c615d8a8583d438f} 
+\index{llist.c@{llist.c}!sort\_list@{sort\_list}}
+\index{sort\_list@{sort\_list}!llist.c@{llist.c}}
+\doxysubsubsection{\texorpdfstring{sort\_list()}{sort\_list()}}
+{\footnotesize\ttfamily void sort\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{Node}} \texorpdfstring{$\ast$}{*}}]{head }\end{DoxyParamCaption})}
+
+The Function to sort the values in the list (NB\+: this given example values are int values) This sorting method we implimented it using bubblesort... 
+\begin{DoxyParams}{Parameters}
+{\em head} & the pointer to the head of the list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing. 
+\end{DoxyReturn}
